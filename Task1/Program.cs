@@ -15,12 +15,7 @@ if(N.Length != 5)
 
 bool check1(string? i)
 {
-    if(i == null)
-    {
-        Console.WriteLine("Введено пустое значение.");
-        return false;
-    }
-    else if (Convert.ToInt32(i[0]) == Convert.ToInt32(i[4]))
+    if (Convert.ToInt32(i[0]) == Convert.ToInt32(i[4]))
     {
         return true;
     }
@@ -32,12 +27,7 @@ bool check1(string? i)
 
 bool check2(string? i)
 {
-    if(i == null)
-    {
-        Console.WriteLine("Введено пустое значение.");
-        return false;
-    }
-    else if (Convert.ToInt32(i[1]) == Convert.ToInt32(i[3]))
+    if (Convert.ToInt32(i[1]) == Convert.ToInt32(i[3]))
     {
         return true;
     }
