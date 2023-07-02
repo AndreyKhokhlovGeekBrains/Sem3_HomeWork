@@ -7,6 +7,11 @@
 Console.WriteLine("Введите пятизначное чило: ");
 string? N = Console.ReadLine();
 
+if(N.Length != 5) 
+{
+    Console.WriteLine("Введено не пятизначное число!");
+    Environment.Exit(0);
+}
 
 bool check1(string? i)
 {
