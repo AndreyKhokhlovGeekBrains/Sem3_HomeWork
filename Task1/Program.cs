@@ -4,18 +4,18 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.WriteLine("Введите пятизначное чило: ");
+Console.WriteLine("Введите пять символов: ");
 string? N = Console.ReadLine();
 
 if(N.Length != 5) 
 {
-    Console.WriteLine("Введено не пятизначное число!");
+    Console.WriteLine("Введено не пять символов!");
     Environment.Exit(0);
 }
 
 bool check1(string? i)
 {
-    if (Convert.ToInt32(i[0]) == Convert.ToInt32(i[4]))
+    if (i[0] == i[4])
     {
         return true;
     }
@@ -27,7 +27,7 @@ bool check1(string? i)
 
 bool check2(string? i)
 {
-    if (Convert.ToInt32(i[1]) == Convert.ToInt32(i[3]))
+    if (i[1] == i[3])
     {
         return true;
     }
@@ -39,9 +39,9 @@ bool check2(string? i)
 
 if(check1(N) && check2(N))
 {
-    Console.WriteLine("Число является палиндромом!");
+    Console.WriteLine("Введенное выражение является палиндромом!");
 }
 else
 {
-    Console.WriteLine("Число НЕ является палиндромом.");
+    Console.WriteLine("Введенное выражение НЕ является палиндромом.");
 }
